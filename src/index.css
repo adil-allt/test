@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-stripes-gray {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.1) 10px,
+    rgba(0, 0, 0, 0.1) 20px
+  );
+}
+
+.bg-stripes-gray-light {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 0, 0, 0.05) 10px,
+    rgba(0, 0, 0, 0.05) 20px
+  );
+}
+
+/* Styles Google Agenda */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: 50px repeat(7, 1fr);
+  border-top: 1px solid #e5e7eb;
+}
+
+.calendar-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+.calendar-time-column {
+  border-right: 1px solid #e5e7eb;
+  background: white;
+}
+
+.calendar-cell {
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  min-height: 40px;
+  position: relative;
+}
+
+.calendar-cell:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.calendar-event {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.calendar-event:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+.calendar-current-time {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #ea4335;
+  z-index: 5;
+}
+
+.calendar-current-time::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: #ea4335;
+  border-radius: 50%;
+}
+
+.lunch-break {
+  background: repeating-linear-gradient(
+    45deg,
+    #f3f4f6,
+    #f3f4f6 10px,
+    #e5e7eb 10px,
+    #e5e7eb 20px
+  );
+}
+
+.evening-break {
+  background: repeating-linear-gradient(
+    45deg,
+    #f3f4f6,
+    #f3f4f6 10px,
+    #e5e7eb 10px,
+    #e5e7eb 20px
+  );
+  opacity: 0.7;
+}
+
+.month-cell {
+  aspect-ratio: 1;
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+}
+
+.month-cell.today {
+  background-color: #e8f0fe;
+}
+
+.month-cell.different-month {
+  background-color: #f9fafb;
+}
+
+.month-cell:hover {
+  background-color: #f3f4f6;
+}
