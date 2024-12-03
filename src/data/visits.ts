@@ -1,0 +1,127 @@
+export const todayVisits = [
+  // Nouveaux patients (2)
+  {
+    time: '09:00',
+    patient: 'Marie Durant',
+    type: 'Nouvelle consultation',
+    amount: '85,00',
+    paid: true,
+    paymentMethod: 'Carte Bancaire',
+    isDelegue: false,
+    isGratuite: false,
+    isNewPatient: true,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0001',
+    lastConsultAmount: '0,00'
+  },
+  {
+    time: '10:00',
+    patient: 'Lucas Petit',
+    type: 'Nouvelle consultation',
+    amount: '85,00',
+    paid: true,
+    paymentMethod: 'Espèces',
+    isDelegue: false,
+    isGratuite: false,
+    isNewPatient: true,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0002',
+    lastConsultAmount: '0,00'
+  },
+  // Anciens patients (2)
+  {
+    time: '11:00',
+    patient: 'Jean Dupont',
+    type: 'Suivi',
+    amount: '65,00',
+    paid: true,
+    paymentMethod: 'Carte Bancaire',
+    isDelegue: false,
+    isGratuite: false,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0003',
+    lastConsultAmount: '65,00'
+  },
+  {
+    time: '14:00',
+    patient: 'Sophie Bernard',
+    type: 'Suivi',
+    amount: '65,00',
+    paid: true,
+    paymentMethod: 'Espèces',
+    isDelegue: false,
+    isGratuite: false,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0004',
+    lastConsultAmount: '65,00'
+  },
+  // Délégué (1) - Gratuit
+  {
+    time: '15:00',
+    patient: 'Pierre Martin',
+    type: 'Suivi',
+    amount: '0,00',
+    paid: true,
+    paymentMethod: '-',
+    isDelegue: true,
+    isGratuite: false,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0005',
+    lastConsultAmount: '65,00'
+  },
+  // Gratuité (2)
+  {
+    time: '16:00',
+    patient: 'Paul Durant',
+    type: 'Suivi',
+    amount: '0,00',
+    paid: true,
+    paymentMethod: '-',
+    isDelegue: false,
+    isGratuite: true,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0006',
+    lastConsultAmount: '65,00'
+  },
+  {
+    time: '16:30',
+    patient: 'Alice Martin',
+    type: 'Suivi',
+    amount: '0,00',
+    paid: true,
+    paymentMethod: '-',
+    isDelegue: false,
+    isGratuite: true,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: false,
+    patientNumber: '0007',
+    lastConsultAmount: '85,00'
+  },
+  // Rendez-vous annulé (1)
+  {
+    time: '17:00',
+    patient: 'Marie Lambert',
+    type: 'Suivi',
+    amount: '0,00',
+    paid: false,
+    paymentMethod: '-',
+    isDelegue: false,
+    isGratuite: false,
+    isNewPatient: false,
+    isControl: false,
+    isCanceled: true,
+    patientNumber: '0008',
+    lastConsultAmount: '65,00'
+  }
+];

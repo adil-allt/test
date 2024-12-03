@@ -1,0 +1,44 @@
+/* Styles pour les zones hachurées */
+.bg-stripes-gray {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(107, 114, 128, 0.1),
+    rgba(107, 114, 128, 0.1) 10px,
+    rgba(107, 114, 128, 0.2) 10px,
+    rgba(107, 114, 128, 0.2) 20px
+  );
+  transition: background 0.2s ease-in-out;
+}
+
+.bg-stripes-gray-light {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(107, 114, 128, 0.05),
+    rgba(107, 114, 128, 0.05) 10px,
+    rgba(107, 114, 128, 0.1) 10px,
+    rgba(107, 114, 128, 0.1) 20px
+  );
+}
+
+/* Styles pour les rendez-vous */
+.appointment-card {
+  @apply rounded shadow-sm transition-all duration-200;
+}
+
+.appointment-card:hover {
+  @apply shadow-md transform scale-[1.02];
+}
+
+/* Styles pour les icônes dans les rendez-vous */
+.appointment-icon {
+  @apply h-4 w-4 text-white opacity-90;
+}
+
+/* Styles pour le texte dans les rendez-vous */
+.appointment-text {
+  @apply text-white;
+}
+
+.appointment-text-secondary {
+  @apply text-white opacity-80;
+}
